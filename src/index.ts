@@ -1,4 +1,6 @@
 import { NubmersCollection } from "./NumbersCollection"
+import { CharactersCollection } from "./CharactersCollection"
+import { LinkedList } from "./LinkedList"
 import { Sorter } from "./Sorter"
 
 
@@ -21,7 +23,18 @@ const sorter3 = new Sorter(numCol3)
 sorter3.sort()
 console.log(sorter3.collection) 
 
-// const numCol4 = new NubmersCollection(('["c", "e", "a", "b", "C" ]'))
-// const sorter4 = new Sorter(numCol4)
-// sorter4.sort()
-// console.log(sorter4.collection) 
+const numCol4 = new CharactersCollection(('[c, e, a, b, C ]'))
+const sorter4 = new Sorter(numCol4)
+sorter4.sort()
+console.log(sorter4.collection) 
+
+const linkedList = new LinkedList()
+linkedList.add(500)
+linkedList.add(-10)
+linkedList.add(-3)
+linkedList.add(4)
+
+const llSorter = new Sorter(linkedList)
+linkedList.print()
+llSorter.sort()
+linkedList.print()
