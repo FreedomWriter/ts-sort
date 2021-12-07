@@ -5,36 +5,32 @@ import { Sorter } from "./Sorter"
 
 
 const numCol = new NubmersCollection([])
-const sorter = new Sorter(numCol)
-console.log(sorter.collection)
+console.log(numCol.data)
 
 const numCol1 = new NubmersCollection([1])
-const sorter1 = new Sorter(numCol1)
-sorter1.sort()
-console.log(sorter1.collection)
+numCol1.sort()
+console.log(numCol1.data)
 
 const numCol2 = new NubmersCollection([-4,3,2,1])
-const sorter2 = new Sorter(numCol2)
-sorter2.sort()
-console.log(sorter2.collection)
+numCol2.sort()
+console.log(numCol2.data)
 
 const numCol3 = new NubmersCollection([0,7,-6,3,2,8,5,1])
-const sorter3 = new Sorter(numCol3)
-sorter3.sort()
-console.log(sorter3.collection) 
+numCol3.sort()
+console.log(numCol3.data) 
 
 const numCol4 = new CharactersCollection(('[c, e, a, b, C ]'))
-const sorter4 = new Sorter(numCol4)
-sorter4.sort()
-console.log(sorter4.collection) 
+numCol4.sort()
+console.log(numCol4.data) 
 
 const linkedList = new LinkedList()
 linkedList.add(500)
 linkedList.add(-10)
 linkedList.add(-3)
 linkedList.add(4)
+linkedList.add(44)
 
-const llSorter = new Sorter(linkedList)
-linkedList.print()
-llSorter.sort()
+
+// linkedList.print()
+linkedList.sort()
 linkedList.print()
